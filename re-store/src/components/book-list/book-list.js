@@ -9,7 +9,7 @@ import { compose } from '../../utils';
 import './book-list.css';
 
 class BookList extends Component {
-
+  
   componentDidMount() {
     // 1. receive data
     const { bookstoreService } = this.props;
@@ -20,7 +20,9 @@ class BookList extends Component {
   }
 
   render() {
+    
     const { books } = this.props;
+    console.log(books)
     return (
       <ul>
         {
